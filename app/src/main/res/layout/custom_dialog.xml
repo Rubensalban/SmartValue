@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tel_destinataire"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_18sdp"
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rectangle_edit"
+        android:hint="@string/numero_de_telephone_du_destinataire"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="@dimen/_4sdp"
+        android:textSize="@dimen/_12ssp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black_acsent"
+        android:textColorHint="@color/black_acsent"/>
+
+</LinearLayout>

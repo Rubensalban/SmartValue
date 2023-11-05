@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_color"
+    tools:context=".layouts.transfert.TransfertActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/purple_700">
+        <ImageView
+            android:id="@+id/back_transfer"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="?actionBarItemBackground"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black_acsent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_transfert" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transferts_interational"
+                        android:fontFamily="@font/myriadpro_bold"
+                        android:textColor="@color/purple_700"
+                        android:textSize="@dimen/_16ssp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:hint="@string/name_exp"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/_14ssp"
+                        android:maxLines="1"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:hint="@string/prenom_exp"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/_14ssp"
+                        android:maxLines="1"/>
+
+                    <Spinner
+                        android:id="@+id/countrySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginBottom="@dimen/_8sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:hint="@string/ville_dest"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/_14ssp"
+                        android:maxLines="1"/>
+
+                    <Spinner
+                        android:id="@+id/paymentSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginBottom="@dimen/_8sdp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:hint="@string/price_dest"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/_14ssp"
+                        android:maxLines="1"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_money_validate"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/btn_green"
+                    android:fontFamily="@font/dinpro_regular"
+                    android:text="Valider"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_money_cancel"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@drawable/btn_black"
+                    android:fontFamily="@font/dinpro_regular"
+                    android:text="Anuler"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

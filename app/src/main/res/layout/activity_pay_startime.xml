@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_color"
+    tools:context=".layouts.reabonnement.PayStartimeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/purple_700">
+
+        <ImageView
+            android:id="@+id/pay_startime_back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:background="?actionBarItemBackground"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black_acsent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="@dimen/_15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_tv"
+            app:tint="@color/white"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_canal"
+                android:fontFamily="@font/myriadpro_bold"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/_16ssp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dinpro_m"
+                    android:text="@string/num_carte_canal"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/num_carte_paystartime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:ems="10"
+                    android:maxLength="14"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/dinpro_m"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_recharge1_validate"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/btn_green"
+            android:fontFamily="@font/dinpro_regular"
+            android:text="Valider"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_recharge1_cancel"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@drawable/btn_black"
+            android:fontFamily="@font/dinpro_regular"
+            android:text="Anuler"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

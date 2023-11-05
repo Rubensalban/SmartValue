@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_color"
+    tools:context=".layouts.directcash.RechargeThreeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/purple_700">
+
+        <ImageView
+            android:id="@+id/recharge3_back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:background="?actionBarItemBackground"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black_acsent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="@dimen/_15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_direct" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recharge3"
+                android:fontFamily="@font/myriadpro_bold"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/_16ssp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10dp"/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dinpro_m"
+                    android:text="@string/code_recharge"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/code_recharge3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:ems="10"
+                    android:maxLength="9"
+                    android:fontFamily="@font/dinpro_m"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp">
+
+                <EditText
+                    android:id="@+id/num_destinataire_1"
+                    android:layout_width="@dimen/_103sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dinpro_m"
+                    android:hint="@string/benef1"
+                    android:textSize="@dimen/_10ssp"
+                    android:inputType="numberDecimal"
+                    android:maxLength="9"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/tel_destinataire_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/dinpro_m"
+                    android:hint="@string/price"
+                    android:inputType="numberDecimal"
+                    android:maxLength="9"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/num_destinataire_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/num_destinataire_1"
+                    app:layout_constraintTop_toTopOf="@+id/num_destinataire_1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp">
+
+                <EditText
+                    android:id="@+id/num_destinataire_2"
+                    android:layout_width="@dimen/_103sdp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dinpro_m"
+                    android:hint="@string/benef2"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/_10ssp"
+                    android:maxLength="9"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/tel_destinataire_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:ems="10"
+                    android:hint="@string/price"
+                    android:inputType="numberDecimal"
+                    android:maxLength="9"
+                    android:fontFamily="@font/dinpro_m"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/num_destinataire_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/num_destinataire_2"
+                    app:layout_constraintTop_toTopOf="@+id/num_destinataire_2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="@string/nb_3"
+                android:textAlignment="center"
+                android:fontFamily="@font/dinpro_m"
+                android:textSize="@dimen/_8ssp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_recharge3_validate"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/btn_green"
+            android:fontFamily="@font/dinpro_regular"
+            android:text="Valider"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_recharge3_cancel"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@drawable/btn_black"
+            android:fontFamily="@font/dinpro_regular"
+            android:text="Anuler"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

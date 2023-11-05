@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_color"
+    tools:context=".layouts.transfert.UserInfosActivity">
+
+    <include android:id="@+id/toolbarUserInfo"
+        layout="@layout/toolbar"
+        app:theme="@style/ToolbarTheme"/>
+
+    <LinearLayout
+        android:padding="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/infoLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lastName"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/_14ssp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/infoFirstName"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/firstName"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/_14ssp"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/infoBirthDateButton"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_birth_date"
+            android:textSize="@dimen/_13ssp"/>
+
+        <EditText
+            android:id="@+id/infoPhone1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone1"
+            android:inputType="phone"
+            android:textSize="@dimen/_14ssp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/infoPhone2"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone2"
+            android:inputType="phone"
+            android:textSize="@dimen/_14ssp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/infoAddress"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            android:textSize="@dimen/_14ssp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/infoCity"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:textSize="@dimen/_14ssp"
+            android:maxLines="1"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_info_validate"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/btn_green"
+                android:fontFamily="@font/dinpro_regular"
+                android:text="Suivant"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_info_cancel"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/btn_black"
+                android:fontFamily="@font/dinpro_regular"
+                android:text="@string/cancel"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/white" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

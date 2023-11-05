@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#2A63EA</color>
+    <color name="purple_500">#2A63EA</color>
+    <color name="purple_700">#2A63EA</color>
+    <color name="teal_200">#2A63EA</color>
+    <color name="teal_700">#2A63EA</color>
+    <color name="black">#FF000000</color>
+    <color name="black_acsent">#111111</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#f1f1f1</color>
+    <color name="blue">#0167B3</color>
+    <color name="grey_10">#ffe6e6e6</color>
+    <color name="grey_80">#ff37474f</color>
+    <color name="bg_color">#F3F3F3</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="text">#7C7C7C</color>
+    <color name="yellow">#FCCC1C</color>
+    <color name="red">#E3252A</color>
+    <color name="overlay_dark_50">#80000000</color>
+    <color name="bg_easy">#EAEAEA</color>
+    <color name="background">#EAEAEA</color>
+    <color name="lightGray">#F2F2F2</color>
+    <color name="black_accent">#2d2d2d</color>
+    <color name="overlay_dark_10">#1a000000</color>
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="teal_100">#cccccc</color>
+    <color name="text_day">#808080</color>
+    <color name="secondary_color">#193360</color>
+    <color name="green">#008000</color>
+</resources>

@@ -1,0 +1,341 @@
+<resources>
+    <string name="app_name">Smart Value</string>
+    <string name="transf_rez_directement_de_l_argent_d_un_r_seau_un_autre">Transfert Mobile money d\'un réseau vers un autre !</string>
+    <string name="exit_to_app">Double retour pour sortir</string>
+    <string name="zero_frais">Opération facturée aux frais habituels des opérateurs.</string>
+    <string name="valider">Partager</string>
+    <string name="annuler">Annuler</string>
+    <string name="srv_carte_airtel">3232</string>
+    <string name="sav_airtel">00242050774444</string>
+    <string name="sav_mtn">00242064004646</string>
+    <string name="svp_number">Veuillez indiquer un numéro de téléphone</string>
+    <string name="renseiger_destinaire">Veuillez renseigner un destinataire</string>
+    <string name="identik_destinataire">Vérifiez et renseignez le même destinataire</string>
+    <string name="confim_renseiger_destinaire">Veuillez confirmer le numéro du destinataire</string>
+    <string name="svp_montant">Veuillez renseigner un montant à envoyer</string>
+    <string name="msg_token_fmt">Messaging</string>
+    <string name="msg_error">Numéro de téléphone invalide</string>
+    <string name="new_version">Nouvelle version disponible</string>
+    <string name="new_disponible">Veuillez mettre à jour la nouvelle version pour continuer à utiliser l\'application</string>
+    <string name="update">Mettre à jour</string>
+    <string name="verify_desti">Echec, verifier le numéro du destinataire</string>
+    <string name="verify_mtn">Echec, veuillez renseinger un destinataire MTN</string>
+    <string name="verify_airtel">Echec, veuillez renseinger un destinataire</string>
+    <string name="verify_montant">Echec, veuillez renseinger un montant superieur ou egal 500 CFA</string>
+    <string name="livraison_de_virtuel"><![CDATA[Livraison de Virtuel & espèces]]></string>
+    <string name="trans_pro">Trans Pro \n(Transferts de proxipité)</string>
+    <string name="transferts_inter">Transferts Mobile money inter-réseaux</string>
+    <string name="mon_solde">Activation de forfaits &amp; consultation de solde</string>
+    <string name="activation_de_forfaits">Activation de forfaits</string>
+    <string name="recharge_de_compte">Recharge de cartes Airtel Money</string>
+    <string name="a_propos">A propos</string>
+    <string name="partager_via">Partagez via...</string>
+    <string name="partager_par_message_prive">Partagez par message privé</string>
+    <string name="transferts_intr_reseaux">Transferts inter-réseaux</string>
+    <string name="operations_factures_aux_frais">Opérations facturées aux frais habituels des opérateurs</string>
+    <string name="destinataire_phone">N° du destinataire</string>
+    <string name="confirm_destinataire_phone">Confirmer le N° du dest…</string>
+    <string name="price_send_phone">Montant à envoyer</string>
+    <string name="direct_seb_text">Direct Cash in vous permet de transférer directement de l\'argent par Mobile Money d\'un réseau à un autre depuis votre mobile et sans vous déplacer.</string>
+    <string name="direct_sub_text_2">Avant de cliquer sur le bouton valider, assurez-vous que les numéros saisis sont corrects. En cas d\'erreur de numéro, nous ne pourrons être tenus pour responsables.</string>
+    <string name="trans_pro_head">Trans Pro</string>
+    <string name="transfert_money">Transferts de proximité</string>
+    <string name="airtel_activation">Activation par Airtel</string>
+    <string name="mtn_activation">Activation par Mtn</string>
+    <string name="exit_no">non</string>
+    <string name="exit_yes">oui</string>
+    <string name="exit_verify">Êtes-vous sûr?</string>
+    <string name="exit_msg">Voulez-vous quitter l\'application</string>
+    <string name="invalide_number">Numéro de téléphone invalide</string>
+    <string name="transport_name">Saisir votre nom</string>
+    <string name="transport_adrress">Indiquer votre adresse</string>
+    <string name="transport_tel">Votre numéro de téléphone</string>
+    <string name="transport_price">Indiquer le montant</string>
+    <string name="transport_text">Ce service express vous permet d\'effectuer vos opérations de Mobile Money sans vous déplacer (Espèces et virtuels).</string>
+    <string name="transport_sub">Après envoi de la demande, un de nos coursiers prendra aussitôt attache avec vous pour venir à votre rencontre !</string>
+    <string name="user_name">"Veuillez saisir votre nom"</string>
+    <string name="user_address">Veillez indiquer votre adresse</string>
+    <string name="user_price">Veillez indiquer le montant</string>
+    <string name="send_to_mtn">Veillez selectionnez un numéro Mtn</string>
+    <string name="send_to_airtel">Veillez selectionnez un numéro Airtel</string>
+    <string name="user_contact">No de téléphone de téléphone</string>
+    <string name="tel_06">N° 06 du destinataire</string>
+    <string name="tel_06_valide">Confirmer le N° 06 du destinataire</string>
+    <string name="tel_05_valide">Confirmer le N° 05 du destinataire</string>
+    <string name="tel_05">N° 05 du destinataire</string>
+    <string name="cash">Besoin d\'espèces</string>
+    <string name="virtuel">Besoin de virtuel</string>
+    <string name="numero_de_telephone_du_destinataire">Numéro de téléphone du destinataire</string>
+    <string name="airtel_to_mtn">Airtel Money vers MoMo</string>
+    <string name="mtn_to_airtel">MoMo vers Airtel Money</string>
+    <string name="airtel_to_mtn2">Airtel vers MTN</string>
+    <string name="mtn_to_airtel2">MTN vers Airtel</string>
+    <string name="net_airtel">Airtel Congo</string>
+    <string name="net_mtn">Mtn Congo</string>
+    <string name="recharge4">Recharger un compte MoMo</string>
+    <string name="recharge3">Recharger deux comptes AM</string>
+    <string name="recharge2">Recharger un autre compte AM</string>
+    <string name="recharge1">Recharger mon compte AM</string>
+    <string name="solde">Consulter mon solde</string>
+    <string name="code">Indiquer le code de recharge</string>
+    <string name="tel_benef">N° tel du bénéficiaire</string>
+    <string name="tel">Indiquer le numéro de téléphone</string>
+    <string name="nb_3">NB: La somme des montants devra toujours correspondre à la valeur de la carte.</string>
+    <string name="nb_4">NB: Ceci est une opération de Direct Cash in. 3,5% seront déduits du montant de la carte pour les frais du Mobile money.</string>
+    <string name="success_send">SMS envoyé avec succès</string>
+    <string name="code_need">Veuillez saisir le code de votre carte</string>
+    <string name="all_need">Veuillez remplir tous les champs</string>
+    <string name="mtn_need">Veuillez saisir un numéro MTN</string>
+    <string name="invalide_airtel">Veuillez saisir un numéro Airtel</string>
+    <string name="validate">Veuillez confirmer l\'envoi si tous les renseingements sont corrects.</string>
+    <string name="validate_code">Veuillez confirmer l\'envoi si le code de recharge est correct.</string>
+    <string name="code_recharge">Saisir le code de recharge</string>
+    <string name="num_carte">Saisir le numéro de la pièce</string>
+    <string name="benef1">N° Tél. bénéficiaire 1</string>
+    <string name="benef2">N° Tél. bénéficiaire 2</string>
+    <string name="montant_send">Montant à envoyer</string>
+    <string name="price">Montant</string>
+    <string name="code_incomplet">Code de recharge incomplet</string>
+    <string name="easy_voyage">Easy Voyage</string>
+    <string name="pnr">Pointe-Noire</string>
+    <string name="bzv">Brazzaville</string>
+    <string name="dol">Dolisie</string>
+    <string name="nky">Nkayi</string>
+    <string name="bsa">Bouansa</string>
+    <string name="mdl">Mindouli</string>
+    <string name="ltt">Loutété</string>
+    <string name="mad">Madingou</string>
+    <string name="pnr_to_bzv"><![CDATA[Pointe-Noire -> Brazzaville]]></string>
+    <string name="bzv_to_pnr"><![CDATA[Brazzaville -> Pointe-Noire]]></string>
+    <string name="dol_to_pnr"><![CDATA[Dolisie -> Pointe-Noire]]></string>
+    <string name="pnr_to_dol"><![CDATA[Pointe-Noire -> Dolisie]]></string>
+    <string name="pnr_to_nky"><![CDATA[Pointe-Noire -> Nkayie]]></string>
+    <string name="nky_to_pnr"><![CDATA[Nkayie -> Pointe-Noire]]></string>
+    <string name="pnr_to_bsa"><![CDATA[Pointe-Noire -> Bouansa]]></string>
+    <string name="bsa_to_pnr"><![CDATA[Bouansa -> Pointe-Noire]]></string>
+    <string name="pnr_to_mdl"><![CDATA[Pointe-Noire -> Mindoulie]]></string>
+    <string name="mdl_to_pnr"><![CDATA[Mindoulie -> Pointe-Noire]]></string>
+    <string name="bzv_to_bsa"><![CDATA[Brazzaville -> Bouansa]]></string>
+    <string name="bzv_to_mdl"><![CDATA[Brazzaville -> Madingou]]></string>
+    <string name="pnr_to_ltt"><![CDATA[Pointe-Noire -> Loutété]]></string>
+    <string name="bsa_to_bzv"><![CDATA[Bouansa -> Brazzaville]]></string>
+    <string name="ltt_to_pnr"><![CDATA[Loutété -> Pointe-Noire]]></string>
+    <string name="pnr_to_mdg"><![CDATA[Pointe-Noire -> Madingou]]></string>
+    <string name="mdg_to_pnr"><![CDATA[Madingou -> Pointe-Noire]]></string>
+    <string name="bzv_to_dolisie"><![CDATA[Brazzaville -> Dolisie]]></string>
+    <string name="dol_to_bzv"><![CDATA[Dolisie -> Brazzaville]]></string>
+    <string name="mdg_to_bzv"><![CDATA[Madingou -> Brazzaville]]></string>
+    <string name="ltt_to_bzv"><![CDATA[Loutété -> Brazzaville]]></string>
+    <string name="bzv_to_ltt"><![CDATA[Brazzaville -> Loutété]]></string>
+    <string name="mdl_to_bzv"><![CDATA[Mindoulie -> Brazzaville]]></string>
+    <string name="bzv_to_mdg"><![CDATA[Brazzaville -> Madingou]]></string>
+    <string name="brz_to_mdl"><![CDATA[Brazzaville -> Mindoulie]]></string>
+    <string name="choice_destination">Choisissez une destination</string>
+    <string name="depart">Ville de départ</string>
+    <string name="arrivee">Ville d\'arrivée</string>
+    <string name="choice_agence">Selectionnez l\'agence de voyage</string>
+    <string name="trans_route">Trans Route Congo</string>
+    <string name="ccs_express">CCS Express</string>
+    <string name="etoile_bethleem">Etoile de bethléem</string>
+    <string name="choice_depart_agence">Selectionnez le point de départ</string>
+    <string name="ngoyo">Ngoyo</string>
+    <string name="och_pnr">Siafoumou</string>
+    <string name="loandjili">Loandjili</string>
+    <string name="vindoulou">Vindoulou</string>
+    <string name="nkouikou">Nkouikou</string>
+    <string name="fond_tietie">Fond tié tié</string>
+    <string name="thyster">Tchyster</string>
+    <string name="mpaka">Mpaka</string>
+    <string name="mayinga">Vougou</string>
+    <string name="marche_dol">Dolisie</string>
+    <string name="nkayi">Nkayi</string>
+    <string name="madingou">Madingou</string>
+    <string name="loutete">Loutete</string>
+    <string name="loudima">Loudima</string>
+    <string name="bouansa">Bouansa</string>
+    <string name="kintele">Kintélé</string>
+    <string name="diata">Diata</string>
+    <string name="total">Marché Total</string>
+    <string name="bas_congo">Bacongo</string>
+    <string name="och_bzv">10 Maisons</string>
+    <string name="ch_deau">Chateau d\'eau</string>
+    <string name="ouenze">Ouenzé 753</string>
+    <string name="frontiere">La frontière</string>
+    <string name="plateau_bzv">Plateau des 15 ans</string>
+    <string name="_45">45</string>
+    <string name="psp_plateau">Moukondo</string>
+    <string name="angola_libre">Angola Libre</string>
+    <string name="masala">Mazala</string>
+    <string name="bifouiti">Bifouiti</string>
+    <string name="talagai">Talangai</string>
+    <string name="kombo">Nkombo</string>
+    <string name="site_17">Sité des 17</string>
+    <string name="dsp_pnr">PNR</string>
+    <string name="dsp_bzv">BZV</string>
+    <string name="dsp_dol">DOL</string>
+    <string name="dsp_nky">NKY</string>
+    <string name="dsp_bsa">BSA</string>
+    <string name="dsp_mdl">MDL</string>
+    <string name="dsp_ltt">LTT</string>
+    <string name="dsp_mdg">MDG</string>
+    <string name="mdg">Madingou</string>
+    <string name="choice_payment">Selectionnez le mode payment</string>
+    <string name="airtel_money">Airtel Money</string>
+    <string name="mtn_money">Mobile Money</string>
+    <string name="srv_airtel">053650000</string>
+    <string name="srv_mtn">065250000</string>
+    <string name="choice_arrive_agence">Selectionnez l\'agence d\'arrivée</string>
+    <string name="valid_code_agence">Veuillez saisir le code agence</string>
+    <string name="enter_name">Veuillez saisir le nom et prenom</string>
+    <string name="enter_address">Veuiller saisir l\'adresse</string>
+    <string name="mindoulie">Mindouli</string>
+    <string name="memou">MEMOU Voyage</string>
+    <string name="airtel">Airtel Congo</string>
+    <string name="mtn">Mtn Congo</string>
+    <string name="choice_network">Envoyer la demande via:</string>
+    <string name="nous_suivre_sur">Nous suivre sur :</string>
+    <string name="service_disponible_7_jours_7">Service disponible 7 jours sur 7</string>
+    <string name="home">Accueil</string>
+    <string name="buy_ticket">Achat billet</string>
+    <string name="remove_ticket">Annulation</string>
+    <string name="term">Termes et conditions d\'utilisations</string>
+    <string name="term_main">Termes et conditions d\'utilisations achats de billets</string>
+    <string name="service_client">Service client</string>
+    <string name="term_and_condition">
+<b>1. Conditions Générales de Vente</b>
+\n
+\n<b>1.1</b> Cette application(EasyVoyage) est mise à la disposition de tout acheteur (ci-après dénommé « l\'Acheteur » « client » ou « vous ») sous réserve des présentes Conditions Générales de Vente (ci-après dénommées les « CGV »). Lorsque vous effectuez un achat sur cette application ou utilisez cette application de quelque manière que ce soit, vous acceptez les présentes CGV.
+\n
+\n<b>1.2</b> Cette application est gérée par NEWSTON, Sociétés de droit Congolais immatriculée au Registre de Commerce et du Crédit Mobilier de Pointe Noire sous le numéro RCCM/1-01-2021-A10-01233 dont le siège social est à Pointe - Noire, rue Tchivili Mont Kamba après le château d’eau (République du Congo), en partenariat avec Maji Technologies.
+L\'acheteur déclare, par les présentes, être majeur (18 ans au moins) et disposer de la capacité juridique pour conclure le présent Contrat et utiliser la présente application conformément aux dispositions des présentes CGV qu\'il (elle) comprend parfaitement et accepte. L\'acheteur consent à assumer la pleine responsabilité financière pour toute utilisation de l\’application envers Newston. L\'acheteur déclare, par ailleurs, que toutes les informations communiquées pour avoir accès à l\’application et à effectuer les achats des billets sont vraies, complètes, exactes et il s\'engage à les mettre à jour.
+\n
+\n<b>1.3</b> Cette application est réservée exclusivement à l\'usage personnel de l\’acheteur. Il est interdit de la modifier, la reproduire, la dupliquer, la copier, la distribuer, la vendre, la revendre ou de l\'exploiter à des fins commerciales ou non commerciales, sous réserve de la possibilité de faire des copies des disponibilités des bus, de votre itinéraire de voyage à des fins personnelles ou d\'envoyer votre itinéraire de voyage à une société de gestion d\'itinéraires agissant de bonne foi ou non.
+\n
+\n<b>1.4</b> L\’acheteur s\'engage à ne pas utiliser l\’application à des fins illégales ou interdites. L\'acheteur accepte, en particulier, de n\'utiliser l\’application qu\'à des fins personnelles et certifie que les produits ou services achetés sur notre application seront destinés à son usage ou à la consommation de personnes pour le compte desquelles il est légalement autorisé à agir. L\'acheteur ne doit pas revendre à des tiers les produits ou services achetés sur notre application. Newston se réserve le droit, à tout moment et sans préavis, de refuser l\'accès à l\’application et à d\’autres services du service client. Toute communication relative au service client ou à la réservation devra être envoyée par courrier électronique à l\'adresse contact@easyvoyagecongo.com.
+\n\n
+\n<b>2. Votre contrat</b>
+\n
+\n<b>2.1</b> Conformément aux exigences de l\’article 1369-8 du code civil, l\’Acheteur accepte l\’usage du support électronique comme mode de conclusion du contrat.
+\n
+\n<b>2.2</b> À travers l\’application, Newston offre un service d\’achat et de réservation des billets des sociétés de transport routier en ligne. Un achat ou une réservation sur cette application signifie tout type de commande de produits ou de services que vous effectuez avec obligation de paiement et qui a été confirmée par l\’application EasyVoyage. En achetant des produits ou des services de voyages par EasyVoyage, vous établissez un contrat directement avec le/les société(s) de transports voyageurs. Newston n\’assure que la vente des billets. Ainsi pour les services hors ligne, transport Express, location et autres services, vous devez contacter directement la société de transport concerné.
+\n
+\n<b>2.3</b> Le terme « Fournisseur de Voyages » englobe, entre autres, les sociétés de transports Voyageurs, les fournisseurs de forfaits de voyage et les sociétés de location de voitures
+\n
+\n<b>2.4</b> Newston effectue la réservation pour votre compte et votre contrat sera soumis aux conditions générales du Fournisseur de Voyages qui peut limiter ou exclure sa responsabilité (souvent en vertu de différentes conventions internationales applicables). Si vous souhaitez prendre connaissance des conditions du Fournisseur de Voyages, vous pourrez consulter les liens disponibles de notre Site. S\'il n\'est pas possible de consulter les conditions du Fournisseur de Voyages via un lien, nous vous communiquerons, sur simple demande, les coordonnées du Fournisseur de Voyages afin que vous puissiez le contacter (Formulaire Conditions du Fournisseur). Assurez-vous de bien lire les conditions spécifiques du Fournisseur de Voyages concernant les frais d\'annulation et autres conditions importantes.
+\n
+\n<b>2.5</b> En utilisant EasyVoyage pour réserver des produits et/ou des services, vous autorisez Newston, non seulement, à vous représenter pendant le processus de recherche entre les différents Fournisseurs de Voyages et lors de la réservation des produits et/ou services fournis par le Fournisseur de Voyages sélectionné, mais également à procéder au paiement des produits ou services en question en votre nom et pour votre compte.
+\n\n
+\n<b>3.	Paiement</b>
+\n
+\n<b>3.1 Modes de paiement</b>
+\n
+Les paiements des billets s\’effectuent par Airtel money et Mtn mobile money selon votre préférence. La validation des paiements s\’effectuera toujours par une confirmation, grâce à la notification que vous recevrez de la part des sociétés de télécommunications spécialisées dans le transfert de fond électronique (MTN CG et Airtel Cg). En suite vous recevrez une confirmation par sms d’avoir payé à EasyVoyage un montant donné avec Numéro de la transaction, et un numéro de référence. Ensuite vous recevrez un sms de confirmation de votre achat.
+\n
+\n<b>3.2 Conditions Financières des comptes</b>
+\n
+Vous devez vous rassurer d’avoir dans votre compte mobile money le montant requis afin que votre transaction puisse se faire sans difficulté. Dans le cas contraire vous serez notifié d\’avoir un solde insuffisant pour effectuer la transaction.
+\n
+\n<b>3.3 Prix des billets</b>
+\n
+Les prix des billets varient selon les destinations et sont régis par la société de transporteur du Congo Brazzaville. Newston s’engage à pouvoir mettre à votre disposition les tarifs normaux de chaque destination.
+Lors du processus d’achat vous serez ramenée à faire votre choix de destination.
+\n
+\n<b>3.4. Frais des transactions</b>
+\n
+Les frais de transaction de chaque billet seront toujours de 3,5% conformément aux taux du Mobile money en République du Congo.
+\n\n
+\n<b>4. Annulation et report</b>
+\n
+\n<b>4.1. Annulation</b>\n
+L\’acheteur est libre d’annuler son billet sans pour autant avancer des justifications, valable ou non. Cependant toute annulation de billet est soumise à une pénalité de 15% de la valeur du billet à payer. Newston s’engage à rembourser la somme restante dans les 48h.
+\n<b>4.2.</b> Nous nous réservons le droit d\'annuler votre réservation si nous avons de bonnes raisons de croire qu\'elle est frauduleuse. Dans ce cas, nous essaierons de prendre contact avec vous en utilisant votre numéro de téléphone communiqué lors de la réservation ou de la personne à contacter en cas d’urgence. Si nous ne sommes pas en mesure de prendre contact avec vous de quelque manière que soit, nous annulerons votre réservation sans engagement de notre responsabilité.
+
+\n\n<b>4.3. Report</b>\n
+L\’acheteur est libre de droit de pourvoir reporter son voyage. Toutefois une pénalité de 10% de la valeur du billet lui sera imposée.
+\n\n
+\n<b>5. Force Majeur</b>\n
+Aucune des deux Parties ne sera tenue pour responsable vis-à-vis de l\’autre Partie de la non-exécution ou des retards dans l\’exécution d’une obligation du présent contrat liés à la survenance d’un cas de force majeure tels qu’ils sont habituellement admis par la jurisprudence, et notamment en cas de guerres civiles, insurrections, émeutes, inondations, tremblements de terre et autres catastrophes naturelles. La survenance d’un cas de force majeure suspendra les obligations nées du présent contrat pendant toute la durée de son existence. Toutefois, si le cas de force majeure a une durée d’existence supérieure à trente (30) jours consécutifs, il ouvrira droit à la résiliation de plein droit du présent contrat par l\’une des Parties.
+\n\n
+\n<b>6.</b> En ce qui concerne les éléments optionnels et les demandes spéciales que vous pouvez adresser dans certains cas aux fournisseurs de voyages, concernant un produit déterminé (par exemple : aliments spéciaux, équipements pour handicapés, sièges pour enfants, etc.), veuillez noter que Newston les transmettra aux fournisseurs de voyages concernés, mais sans pour autant pouvoir garantir leur exécution par lesdits fournisseurs de voyages. Il est de votre responsabilité de confirmer avec votre/vos fournisseur(s) de voyages si ces demandes pourront être satisfaites.
+    </string>
+    <string name="note">N.B: L\'annulation d\'un billet engendre des frais de 15%. Il seront automatiquement déduits lors de votre rembourssement.</string>
+    <string name="valid_billet_number">Veuillez saisir un numéro de billet</string>
+    <string name="decline">Decliner</string>
+    <string name="accepte">Accepter</string>
+    <string name="enter_depart">Veuillez choisir l\'agence de depart</string>
+    <string name="enter_arive">Veuillez choisir l\'agence d\'arrive</string>
+    <string name="enter_phone">Veuillez saisir le numéro de téléphone</string>
+    <string name="error_agence">Veuillez définir l\'agence de voyage</string>
+    <string name="error_destination">Echec! destination incorect</string>
+    <string name="choice_destination_depart">Ville d\'arrivée </string>
+    <string name="choice_destination_arrive">Ville de départ</string>
+    <string name="voungou">Voungou</string>
+    <string name="siafoumou">Siafoumou</string>
+    <string name="grd_marche">Grand Marché</string>
+    <string name="_10_Maisons">10 Maisons</string>
+    <string name="moukondo">Moukondo</string>
+    <string name="mazala">Mazala</string>
+    <string name="select_agence">Sélectionner l\'agence de voyage</string>
+    <string name="agence_depart">Sélectionner l\'agence</string>
+    <string name="sim_sender">Envoyer la demande via:</string>
+    <string name="direct_pay">Réabonnement\nCONGO TELECOM</string>
+    <string name="numero_abonement">Veuillez saisir votre numéro d\'abonnement</string>
+    <string name="numero_ab">Numéro de l\'abonnement</string>
+    <string name="lost_abonement">Vous avez oublié votre numéro d\'abonnement ?</string>
+    <string name="numero_moi">Selectionnez le nombre de mois à payer</string>
+    <string name="lost_abon">Numéro d\'abonnement oublié ?</string>
+    <string name="lost_text">Saisir le numéro de téléphone fournis lors de votre souscription.</string>
+    <string name="transferts_interational">Transfert international</string>
+    <string name="epargne_credit"><![CDATA[Epargne & Crédit]]></string>
+    <string name="reabonnement_tv">Réabonnements TV</string>
+    <string name="failed_sms_send">Echec d\'envoie du sms, Veuillez réessayer</string>
+    <string name="pay_canal">Payer Canal+</string>
+    <string name="change_canal">Changer de formule Canal+</string>
+    <string name="pay_startime">Payer STARTIME</string>
+    <string name="change_startime">Changer de formule STARTIME</string>
+    <string name="depo_courant">Dépôt compte courant</string>
+    <string name="depo_epargne">Dépôt compte épargne</string>
+    <string name="depo_bloque">Dépôt compte bloqué</string>
+    <string name="depo_tontine">Dépôt compte tontine</string>
+    <string name="retrait_courant">Retrait compte courant</string>
+    <string name="retrait_epargne">Retrait compte épargne</string>
+    <string name="retrait_tontine">Retrait compte tontine</string>
+    <string name="validation">Valider</string>
+    <string name="cancel">Annuler</string>
+    <string name="firstName">Prénom</string>
+    <string name="lastName">Nom</string>
+    <string name="select_birth_date">Date de naissance</string>
+    <string name="phone1">Numéro de téléphone Airtel</string>
+    <string name="phone2">Numéro de téléphone Mtn</string>
+    <string name="address">Adresse de résidence</string>
+    <string name="city">Ville de résidence</string>
+    <string name="idType">Type de pièce</string>
+    <string name="idNumber">Numéro de la pièce</string>
+    <string name="pieceType">Quelle pièce d\'identité avez-vous?</string>
+    <string name="cni">CNI</string>
+    <string name="passeport">PASSEPORT</string>
+    <string name="permis_de_conduire">PERMIS DE CONDUIRE</string>
+    <string name="scan">Scannez votre ID</string>
+    <string name="submit">Valider</string>
+    <string name="name_exp">Nom du destinataire</string>
+    <string name="prenom_exp">Prénom du destinataire</string>
+    <string name="ville_dest">Ville</string>
+    <string name="pays_dest">Pays</string>
+    <string name="price_dest">Montant</string>
+    <string name="num_carte_canal">Entrer le numéro de la carte</string>
+    <string name="option_carte_canal">Formule de réabonnement</string>
+    <string name="set_all_info">Veuillez renseigner tous les champs</string>
+    <string name="user_info">Informations</string>
+    <string name="enterInfo">Informations à fournir</string>
+    <string name="age">Tranche d\'âge</string>
+    <string name="age_1">18 à 25 ans</string>
+    <string name="age_2">26 à 35 ans</string>
+    <string name="age_3">36 à 45 ans</string>
+    <string name="age_4">46 ans et +</string>
+    <string name="mode_internet">Mode internet </string>
+    <string-array name="id_types_array">
+        <item>Carte nationale d\'identité</item>
+        <item>Passeport</item>
+        <item>Permis de Conduire</item>
+    </string-array>
+</resources>

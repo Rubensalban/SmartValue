@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background_color"
+    tools:context=".layouts.transfert.UserInfos2Activity">
+
+    <include android:id="@+id/toolbarUserInfo2"
+        layout="@layout/toolbar"
+        app:theme="@style/ToolbarTheme"/>
+
+    <LinearLayout
+        android:padding="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pieceType"
+            android:textSize="@dimen/_22ssp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dinpro_medium"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupPiece"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/infoCni"
+                android:text="@string/cni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/infoPassport"
+                android:text="@string/passeport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/infoPermitConduire"
+                android:text="@string/permis_de_conduire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/infoNumPiece"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/num_carte"
+            android:inputType="text"
+            android:textSize="@dimen/_14ssp"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/btn_info2_Scan"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scan"
+            android:textSize="@dimen/_13ssp"/>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_info2_validate"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/btn_green"
+                android:fontFamily="@font/dinpro_regular"
+                android:text="@string/submit"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_info2_cancel"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/btn_black"
+                android:fontFamily="@font/dinpro_regular"
+                android:text="@string/cancel"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
