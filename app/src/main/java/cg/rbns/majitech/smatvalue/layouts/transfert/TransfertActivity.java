@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
@@ -38,59 +39,102 @@ public class TransfertActivity extends AppCompatActivity {
 
         btnback.setOnClickListener(v -> onBackPressed());
 
-        // Création d'une liste de moyens de paiement
-        List<String> paymentMethods = new ArrayList<>();
-        paymentMethods.add("Veuillez selectionner le mode de payment");
-        paymentMethods.add("Mobile money");
-        paymentMethods.add("Cash");
-        paymentMethods.add("CB");
+        // Création d'une liste de operateur telephonique par pays
+        List<String> selectList = new ArrayList<>();
+        selectList.add("Selectionner un opératteur");
 
-        // Récupération de la liste des pays depuis la classe Locale
-        String[] locales = Locale.getISOCountries();
+        List<String> burkinaList = new ArrayList<>();
+        burkinaList.add("ORANGE");
+
+        List<String> beninList = new ArrayList<>();
+        beninList.add("MOOV");
+
+        List<String> civList = new ArrayList<>();
+        civList.add("ORANGE");
+        civList.add("MOOV");
+        civList.add("MTN");
+
+        List<String> senegalList = new ArrayList<>();
+        senegalList.add("FREE");
+        senegalList.add("ORANGE");
+
+        List<String> ghanalList = new ArrayList<>();
+        ghanalList.add("AIRTEL");
+        ghanalList.add("TIGO");
+        ghanalList.add("MTN");
+        ghanalList.add("VODAFONE");
+
+        List<String> guinnelList = new ArrayList<>();
+        guinnelList.add("AIRTEL");
+        guinnelList.add("TIGO");
+        guinnelList.add("MTN");
+        guinnelList.add("VODAFONE");
+
+        List<String> maliList = new ArrayList<>();
+        maliList.add("ORANGE");
+
+        List<String> togoList = new ArrayList<>();
+        togoList.add("MOOV");
+        togoList.add("TOGOCELL");
+
+        List<String> nigerList = new ArrayList<>();
+        nigerList.add("MOOV");
+        nigerList.add("TOGOCELL");
+
+        // Vos listes de opérateurs téléphoniques par pays
+        HashMap<String, List<String>> operatorsByCountry = new HashMap<>();
+        operatorsByCountry.put("Sélectionner le pays de destination", selectList);
+        operatorsByCountry.put("BURKINA FASO", burkinaList);
+        operatorsByCountry.put("BENIN", beninList);
+        operatorsByCountry.put("CODE D'IVOIRE", civList);
+        operatorsByCountry.put("SENEGAL", senegalList);
+        operatorsByCountry.put("GHANA", ghanalList);
+        operatorsByCountry.put("GUINEE", guinnelList);
+        operatorsByCountry.put("MALI", maliList);
+        operatorsByCountry.put("TOGO", togoList);
+        operatorsByCountry.put("NIGER", nigerList);
+
+// Récupération de la liste des pays depuis la classe Locale
         List<String> countryList = new ArrayList<>();
-        for (String countryCode : locales) {
-            Locale obj = new Locale("", countryCode);
-            countryList.add(obj.getDisplayCountry());
-        }
+        countryList.add("Veuillez sélectionner le pays");
+        countryList.add("BURKINA FASO");
+        countryList.add("BENIN");
+        countryList.add("CODE D'IVOIRE");
+        countryList.add("SENEGAL");
+        countryList.add("GHANA");
+        countryList.add("GUINEE");
+        countryList.add("MALI");
+        countryList.add("TOGO");
+        countryList.add("NIGER");
 
-        // Création d'un ArrayAdapter pour le Spinner
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, paymentMethods);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+// Création d'un ArrayAdapter pour le Spinner des pays
+        ArrayAdapter<String> countryAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, countryList);
+        countryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+// Application de l'adapter au Spinner des pays
+        countrySpinner.setAdapter(countryAdapter);
 
-        // Application de l'adapter au Spinner
-        paymentSpinner.setAdapter(adapter);
-
-        // Gestion de la sélection du Spinner (événement)
-        paymentSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                selectedPaymentMethod = (String) parent.getItemAtPosition(position);
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                // Gestion si rien n'est sélectionné
-            }
-        });
-
-        // Tri des pays par ordre alphabétique
-        countryList.sort(String::compareTo);
-
-        // Ajout de l'indication "Veuillez sélectionner le mode de paiement" au début de la liste
-        countryList.add(0, "Veuillez sélectionner le pays");
-
-        // Création d'un ArrayAdapter pour le Spinner
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, countryList);
-        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // Application de l'adapter au Spinner
-        countrySpinner.setAdapter(adapter2);
-
-        // Gestion de la sélection du Spinner (événement)
+// Gestion de la sélection du Spinner des pays (événement)
         countrySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedCountry = (String) parent.getItemAtPosition(position);
+
+                // Vérifier si le pays sélectionné a une liste d'opérateurs associée
+                if (operatorsByCountry.containsKey(selectedCountry)) {
+                    List<String> operators = operatorsByCountry.get(selectedCountry);
+
+                    // Création d'un ArrayAdapter pour le Spinner des opérateurs
+                    ArrayAdapter<String> operatorsAdapter = new ArrayAdapter<>(TransfertActivity.this, android.R.layout.simple_spinner_item, operators);
+                    operatorsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    // Application de l'adapter au Spinner des opérateurs
+                    paymentSpinner.setAdapter(operatorsAdapter);
+                } else {
+                    // Si le pays sélectionné n'a pas d'opérateurs, réinitialisez le Spinner de paiement
+                    List<String> emptyList = new ArrayList<>();
+                    ArrayAdapter<String> emptyAdapter = new ArrayAdapter<>(TransfertActivity.this, android.R.layout.simple_spinner_item, emptyList);
+                    emptyAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    paymentSpinner.setAdapter(emptyAdapter);
+                }
             }
 
             @Override

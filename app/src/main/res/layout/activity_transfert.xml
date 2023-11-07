@@ -90,13 +90,6 @@
                         android:textSize="@dimen/_14ssp"
                         android:maxLines="1"/>
 
-                    <Spinner
-                        android:id="@+id/countrySpinner"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="0dp"
-                        android:layout_marginBottom="@dimen/_8sdp" />
-
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -106,12 +99,7 @@
                         android:textSize="@dimen/_14ssp"
                         android:maxLines="1"/>
 
-                    <Spinner
-                        android:id="@+id/paymentSpinner"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="0dp"
-                        android:layout_marginBottom="@dimen/_8sdp"/>
+
 
                     <EditText
                         android:layout_width="match_parent"
@@ -121,6 +109,20 @@
                         android:inputType="numberDecimal"
                         android:textSize="@dimen/_14ssp"
                         android:maxLines="1"/>
+
+                    <Spinner
+                        android:id="@+id/countrySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginBottom="@dimen/_10sdp" />
+
+                    <Spinner
+                        android:id="@+id/paymentSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginBottom="@dimen/_8sdp"/>
 
 
                 </LinearLayout>

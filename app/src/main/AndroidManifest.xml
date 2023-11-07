@@ -87,6 +87,34 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".layouts.mecrecu.DepotBloqueActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".layouts.mecrecu.DepotCourantActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".layouts.mecrecu.DepotEpargneActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".layouts.mecrecu.DepotTontineActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".layouts.mecrecu.RetraitCourantActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".layouts.mecrecu.RetraitEpargneActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".layouts.mecrecu.RetraitTontineActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
