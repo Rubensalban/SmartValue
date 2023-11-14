@@ -14,7 +14,7 @@
         android:background="@color/purple_700">
 
         <ImageView
-            android:id="@+id/mecrecu_back"
+            android:id="@+id/depot_bloc_back"
             android:layout_width="@dimen/_24sdp"
             android:layout_height="@dimen/_24sdp"
             android:background="?actionBarItemBackground"
@@ -80,7 +80,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/mecrecu_amount"
+                    android:id="@+id/depot_bloc_amount"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10dp"
@@ -113,7 +113,7 @@
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_mecrecu_validate"
+            android:id="@+id/depot_bloc_validate"
             android:layout_width="@dimen/_100sdp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_5sdp"
@@ -124,7 +124,7 @@
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_mecrecu_cancel"
+            android:id="@+id/depot_bloc_cancel"
             android:layout_width="@dimen/_100sdp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_5sdp"

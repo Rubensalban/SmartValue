@@ -336,6 +336,7 @@ Aucune des deux Parties ne sera tenue pour responsable vis-à-vis de l\’autre 
     <string name="mecrecu_amount">Numéro du compte</string>
     <string name="num_amount">Montant à envoyer</string>
     <string name="amount_send">Montant à envoyer</string>
+    <string name="amount">Montant à retirer</string>
     <string-array name="id_types_array">
         <item>Carte nationale d\'identité</item>
         <item>Passeport</item>

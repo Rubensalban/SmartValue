@@ -43,10 +43,6 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".layouts.reabonnement.StartimeActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".layouts.directcash.RechargeFourActivity"
             android:exported="false"
             android:screenOrientation="portrait" />

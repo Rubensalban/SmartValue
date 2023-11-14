@@ -35,6 +35,7 @@ import com.onesignal.debug.LogLevel;
 import cg.rbns.majitech.smatvalue.fragments.HomeFragment;
 import cg.rbns.majitech.smatvalue.fragments.ServiceClientFragment;
 import cg.rbns.majitech.smatvalue.layouts.TermActivity;
+import cg.rbns.majitech.smatvalue.utilities.PreferenceManager;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton btn_airtel, btn_mtn, btn_send_to;
@@ -72,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
         }));
 
 
+        // Récupérer la valeur du Switch enregistrée dans les préférences
+        PreferenceManager preferenceManager = new PreferenceManager(this);
+        boolean savedSwitchValue = preferenceManager.getBoolean("switch_state", false);
 
         //Init
         desti = findViewById(R.id.tel_destinataire);
@@ -81,14 +85,11 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitle("");
         toolbar.inflateMenu(R.menu.toolbar);
         SwitchCompat switchNetwork = toolbar.findViewById(R.id.switchNetwork);
+        switchNetwork.setChecked(savedSwitchValue);
         switchNetwork.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    savePrefsData(true);
-                } else {
-                    savePrefsData(false);
-                }
+                preferenceManager.putBoolean("switch_state", isChecked);
             }
         });
 

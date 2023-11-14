@@ -15,21 +15,23 @@ import cg.rbns.majitech.smatvalue.databinding.ActivityDepotBloqueBinding;
 
 public class DepotBloqueActivity extends AppCompatActivity {
 
-    ActivityDepotBloqueBinding binding;
-    String selectedOption = null;
+    private ActivityDepotBloqueBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityDepotBloqueBinding.inflate(getLayoutInflater());
         eventListner();
-        spinnerInit();
         setContentView(binding.getRoot());
-    }
-    private void spinnerInit() {
     }
 
     private void eventListner() {
+        binding.depotBlocBack.setOnClickListener(v -> onBackPressed());
+        binding.depotBlocCancel.setOnClickListener(v-> binding.depotBlocAmount.setText(""));
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }
